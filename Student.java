@@ -1,25 +1,32 @@
+
 public class Student {
 
     protected String studentId;
-    protected String studentName;
-    protected String faculty;
+    protected String stduentName;
+    protected String facultg;
     protected String major;
 
-    public void enrollment() {
+    protected void enrollment() {
         System.out.println("enrollment");
     }
 
     public void payment() {
-        System.out.println("payment by package");
+        System.out.println("payment");
     }
 
-    public void addCoures() {
-        System.out.println("addCoures");
+    public void addCourse() {
+        System.out.println("addCourse");
     }
 
-    public void dropCoures() {
-        System.out.println("dropCoures");
+    public void droopCourse() {
+        System.out.println("droopCourse");
     }
 
+    public static void main(String[] args) {
+        Student mariam = new Student();
+        System.out.println(">>" + mariam);
+        mariam.enrollment();
 
-} // end class
+    }
+
+}//end

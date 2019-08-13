@@ -1,25 +1,20 @@
-
-import chap4.GadauateStudent;
-
 public class CallStudent {
-    
     public static void main(String[] args) {
-        System.out.println("Hello World");
-        Student kanittha = new Student();
-        System.out.println("objrct kanittha "+kanittha);
-        kanittha.addCoures();
-        kanittha.dropCoures();
-        kanittha.payment();
-        kanittha.enrollment();
+        Student peetoey = new Student();
+        System.out.println(">>" + peetoey );
+        peetoey.enrollment();
+        peetoey.payment();
+        peetoey.addCourse();
+        peetoey.droopCourse();
+        System.out.println("=========");
+        GraduateSttudent yaya = new GraduateSttudent();
+        yaya.enrollment();
+        yaya.addCourse();
+        yaya.droopCourse();
+        yaya.payment();
+        yaya.oralExamination();
+        yaya.thesisExamination();
         
-        //crete object GraduateStudent
-        GadauateStudent bus = new GadauateStudent();
-        System.out.println("object bus = "+bus);
-        bus.oralExamination();
-        bus.thesisExamination();
-        bus.enrollment();
-        bus.addCoures();
-        bus.dropCoures();
-        bus.payment();
-    }
+    } 
+    
 }
